@@ -41,14 +41,14 @@ def parseText(text, deaths_dict, cases_dict):
         #Total cases
         if words_list[2] == 'cases':
             number_cases = cases_dict[words_list[6]]
-            answer = 'There are {} cases in {}'.format(number_cases, words_list[6])
+            answer = f"There are {number_cases} cases in {words_list[6]}"
             print(answer)
             speak(answer)
 
         #Number of deaths
         elif words_list[2] == 'deaths':
             number_cases = deaths_dict[words_list[6]]
-            answer = 'There are {} deaths in {}'.format(number_cases, words_list[6])
+            answer = f"There are {number_cases} deaths in {words_list[6]}"
             print(answer)
             speak(answer)
     
